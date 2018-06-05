@@ -11,7 +11,13 @@ def initialize(email)
 end
 
 def parse
-  self.email.split(/,|\s/)
+  parsed = self.email.split(/,|\s/)
+  parsed.each do{
+    |e|
+    if e ==""
+      parsed.delete(e)
+    end
+  }
   #binding.pry
 end
 
