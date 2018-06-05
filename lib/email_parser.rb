@@ -12,10 +12,10 @@ end
 
 def parse
   parsed = self.email.split(/,|\s/)
-  parsed.each do{
-    |e|
-    if e ==""
-      parsed.delete(e)
+  parsed.each{
+    |ele| 
+    if ele ==""
+    parsed.delete(e)
     end
   }
   #binding.pry
