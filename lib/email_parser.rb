@@ -13,8 +13,8 @@ end
 def parse
   parsed = self.email.split(/,|\s/)
   parsed.each{
-    |ele| 
-    if ele ==""
+    |e|
+    if e ==""
     parsed.delete(e)
     end
   }
