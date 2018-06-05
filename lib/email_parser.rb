@@ -11,8 +11,8 @@ def initialize(email)
 end
 
 def parse
-  self.email.split(", ")
-  binding.pry
+  self.email.split(/,|\s/)
+  #binding.pry
 end
 
 end
