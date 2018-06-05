@@ -18,9 +18,8 @@ def parse
     if e ==""
     parsed.delete(e)
     end
-
-    if e == temp
   }
+  parsed.uniq
   #binding.pry
 end
 
